@@ -22,7 +22,7 @@ export function Header() {
             <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
               <Briefcase className="w-5 h-5 text-white" />
             </div>
-            <span className="text-xl font-semibold text-gray-900">
+            <span className="text-xl font-semibold text-gray-900 hidden sm:block">
               Career Coach
             </span>
           </div>
@@ -37,14 +37,14 @@ export function Header() {
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
                   className={cn(
-                    "flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-colors",
+                    "flex items-center gap-2 px-3 sm:px-4 py-2 rounded-lg text-sm font-medium transition-colors",
                     isActive
                       ? "bg-blue-50 text-blue-700"
                       : "text-gray-600 hover:text-gray-900 hover:bg-gray-100"
                   )}
                 >
                   <Icon className="w-4 h-4" />
-                  {tab.label}
+                  <span className="hidden sm:inline">{tab.label}</span>
                 </button>
               );
             })}

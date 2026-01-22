@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useStore } from "@/lib/store";
 import { KanbanColumn } from "./KanbanColumn";
+import { EmptyState } from "./EmptyState";
 import { Plus, X } from "lucide-react";
 import type { JobStatus } from "@/lib/types";
 
@@ -166,14 +167,16 @@ export function TrackTab() {
 
       {/* Empty State */}
       {jobs.length === 0 && (
-        <div className="text-center py-12 bg-gray-50 rounded-xl">
-          <p className="text-gray-500 mb-4">No jobs tracked yet</p>
-          <button
-            onClick={() => setShowAddForm(true)}
-            className="text-blue-600 hover:text-blue-700 font-medium"
-          >
-            Add your first job
-          </button>
+        <div className="bg-white rounded-xl border border-gray-200">
+          <EmptyState
+            icon="briefcase"
+            title="No jobs tracked yet"
+            description="Start tracking your job applications by adding your first job. Drag cards between columns to update their status."
+            action={{
+              label: "Add your first job",
+              onClick: () => setShowAddForm(true),
+            }}
+          />
         </div>
       )}
     </div>

@@ -5,7 +5,8 @@ import { ResumeInput } from "./ResumeInput";
 import { JobInput } from "./JobInput";
 import { CultureSelector } from "./CultureSelector";
 import { ResultsPanel } from "./ResultsPanel";
-import { Loader2, Sparkles } from "lucide-react";
+import { AnalysisLoadingSkeleton } from "./LoadingSkeleton";
+import { Loader2, Sparkles, AlertTriangle } from "lucide-react";
 import type { AnalyzeResponse } from "@/lib/types";
 
 export function AnalyzeTab() {
@@ -103,13 +104,20 @@ export function AnalyzeTab() {
 
       {/* Error Display */}
       {analysisError && (
-        <div className="bg-red-50 border border-red-200 rounded-lg p-4 text-red-700 text-center">
-          {analysisError}
+        <div className="bg-red-50 border border-red-200 rounded-xl p-4 flex items-center gap-3">
+          <AlertTriangle className="w-5 h-5 text-red-500 flex-shrink-0" />
+          <div>
+            <p className="font-medium text-red-800">Analysis Failed</p>
+            <p className="text-sm text-red-600">{analysisError}</p>
+          </div>
         </div>
       )}
 
+      {/* Loading Skeleton */}
+      {isAnalyzing && <AnalysisLoadingSkeleton />}
+
       {/* Results */}
-      {analysisResult && <ResultsPanel />}
+      {analysisResult && !isAnalyzing && <ResultsPanel />}
     </div>
   );
 }

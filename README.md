@@ -1,11 +1,13 @@
-# Career Coach MVP
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6C3483,100:2ECC71&height=200&section=header&text=Career%20Coach%20MVP&fontSize=46&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=AI-Powered%20Hiring%20Panel%20Simulation&descAlignY=56&descSize=18" width="100%" alt="Career Coach MVP header"/>
+</p>
 
 <div align="center">
 
-![Version](https://img.shields.io/badge/version-0.1.0-blue)
-![Next.js](https://img.shields.io/badge/Next.js-14-black)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
+[![Version](https://img.shields.io/badge/version-0.1.0-2ECC71?style=for-the-badge&labelColor=0d1117)](#)
+[![Next.js](https://img.shields.io/badge/Next.js-14-000?style=for-the-badge&logo=nextdotjs&logoColor=white&labelColor=0d1117)](https://nextjs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white&labelColor=0d1117)](https://www.typescriptlang.org)
+[![License](https://img.shields.io/badge/License-MIT-bb9af7?style=for-the-badge&labelColor=0d1117)](#license)
 
 **AI-Powered Hiring Panel Simulation**
 
@@ -345,3 +347,7 @@ Career Coach MVP is part of the **Antigravity Ecosystem** by [Metaventions AI](h
 [OS-App](https://github.com/Dicoangelo/OS-App) • [ResearchGravity](https://github.com/Dicoangelo/ResearchGravity) • [The-Decosystem](https://github.com/Dicoangelo/The-Decosystem)
 
 </div>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2ECC71,100:6C3483&height=120&section=footer" width="100%" alt="footer"/>
+</p>

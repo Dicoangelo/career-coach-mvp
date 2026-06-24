@@ -11,7 +11,7 @@
   "dependencies": {
     "@anthropic-ai/sdk": "^0.71.2",
     "clsx": "^2.1.1",
-    "lucide-react": "^0.562.0",
+    "lucide-react": "^1.21.0",
     "next": "^15.5.19",
     "openai": "^6.16.0",
     "react": "^18",
